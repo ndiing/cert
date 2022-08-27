@@ -1,5 +1,33 @@
 {
   "dependencies": {
     "node-forge": "^1.3.1"
-  }
+  },
+  "name": "@ndiinginc/cert",
+  "description": "```\r npm install @ndiinginc/cert\r ```",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndiing/cert.git"
+  },
+  "keywords": [
+    "rootca",
+    "self-signed",
+    "certificate",
+    "cert",
+    "cert-maker"
+  ],
+  "author": "ndiing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndiing/cert/issues"
+  },
+  "homepage": "https://github.com/ndiing/cert#readme"
 }
