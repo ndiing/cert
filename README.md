@@ -1,0 +1,47 @@
+# Install
+
+```
+npm install @ndiinginc/cert
+```
+
+## Cert
+
+<!-- constructor -->
+<!-- constructor -->
+
+<!-- properties -->
+### Properties
+<dl>
+    <dt><code><a href="./docs/cert/default-attrs.md">Cert#defaultAttrs</a></code></dt>
+    <dd></dd>
+</dl>
+<!-- properties -->
+
+<!-- staticproperties -->
+<!-- staticproperties -->
+
+<!-- methods -->
+<!-- methods -->
+
+<!-- staticmethods -->
+### Static Methods
+<dl>
+    <dt><code><a href="./docs/cert/create-certificate.md">Cert.createCertificate()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/cert/create-certificate-authority.md">Cert.createCertificateAuthority()</a></code></dt>
+    <dd></dd>
+    <dt><code><a href="./docs/cert/create-self-signed-certificate.md">Cert.createSelfSignedCertificate()</a></code></dt>
+    <dd></dd>
+</dl>
+<!-- staticmethods -->
+
+<!-- examples -->
+### Examples
+```js
+// Usage// Create Root CAconst ca = Cert.createCertificateAuthority();// -----BEGIN RSA PRIVATE KEY-----// MIIEowIBAAKCAQEAyy2k1IHOfE7M/QGwmutSHLxj66Pv0/+ZxPmewC2ns8hf1tge// iSBLTcfv5eMdpHNaOg/RuFEz3L4stI5Nu/i2BanqtmX7ROi+b6pKeOzINhE9LNdF// wpHCfrM9KwjnOj8zI23+FUGPqbXceFtcM3dhVyQNLiHUOcG6e+bi+NRYYK3AaBRF// R1t0u/Qt8G8V+lwFAF9bz5vtDxIr52kmM++zWb0zXjpM8yJczJskFzNQHSLs2/Ou// cnRImMNoOKS6jWN1HJ1WDOaE0in2XTNa5ENO1S9BstAZCEkoHG0baYvte2HPffF8// UAwLq1DEqtRnbS9jUx8qj/+u7Z6UQF7lRh56zQIDAQABAoIBAFzs9VRUQjJMgCi/// WxyfwCBwcWrWwdu+LYAPgvH2b5ska+EBW4XwBUD/ztLfuzD5qSyhC5Q3X3b4a83w// v9DXAbk5a6Ycon1zzZWY1xLTiQZhgA9ALiG9NK1qIPHL0qWrPiJYLjtejuxZxwot// DtBjK1wFmxmcU0pPNpFwmiKgTAN648S9EQku8M8tMo9L6irbI8SivodfQbk4U5my// bYAiZopYVU2FRuh1/qACGRDolyvGYazyNRK5RUJeynuUHA/Q5KlZ2+U6+ydrdb5f// y2DzLgQauSAZxa+sfoxsvbcaKXBWcB9e2IQxgMb0stj+TyKjPHK7yxkt7kt14DmV// wHV03oECgYEA5Gw9kZzoNGPWvoUqsldADONePw8/vLQ9aqt9Y8+eFp1CZ6GxxuFf// /MZgOovBZSv3tKyMY0IhhMHmf0GlJ9OU5iX6fm4BOwQIgPKf3O01Feb9WbOpDV8g// NQ6yggiKvYlYNE5trwtuTdZIGau/nKLetnRaWmw9I5bbdHWtF63gFJECgYEA47Uu// vdx/xaoA5PPP92tg2nqW32ktmS4CRRpSSgfxa7TAWscnLDkbdngoSMhKyI3PSqxN// 4FYSBsAghz0UG6+IYjmXTTehdFoKLwrFJmYqbscA9RL1mLUMEBEz15up2Fjv9oWY// 4Z7KAid02LnkMbtzemCr28OMXcmvVFbHpmHlcH0CgYBrElHJ78Loy+Pdao6ZCkz7// vZhv9rXpvpMLbVdZcfiooQ5/hUvP7dUQp+xzhQ8iXXm/NyKXZGhR0pI5FIxWHtet// CiBhIy9wenOB/jjxVj+MBLq9UXnsyqpONJV4XoiqT7cIzbqcUr9hvRAO+HLY+X9s// Bx5TRGlkRVKZRI/eiaKAAQKBgQChc+IEdMeT24puzAD1KYmu36UCG41dQyYQ4Szf// mOowuCR7OSIpVQSH54KIuJttwD7ub2V4Xw7BApEN0tzjFH7bRoJlGcC8wurdmAFZ// zK7hhPDE1ACXmidHbSsZASJYaBcc8HUJ5JDPHjLXSFbofETQzKKOXAS2qz5Jyo4d// BuSr8QKBgDe54vez6nZ2d2TJcZpRpMpKw+wcJIRXoXPT5gGK46aG4YhfaUYESfoY// q53HaXkVu3wdw/2o71DeIfA6s9/KtWKliqbQQOufr7+9EXSHdgdTQChyXtmChXwE// kLfK9GsHRw55bHel7tOE+mqIQtWsVcelAQtOy6aMb5Mh8dhf99JK// -----END RSA PRIVATE KEY-----// -----BEGIN CERTIFICATE-----// MIIDOTCCAiGgAwIBAgIDCAhoMA0GCSqGSIb3DQEBCwUAMFYxCzAJBgNVBAYTAklE// MQ8wDQYDVQQKEwZOZGlpbmcxDjAMBgNVBAgTBUphdGltMRAwDgYDVQQLEwdQYWNp// dGFuMRQwEgYDVQQDEwtDZXJ0TWFuYWdlcjAeFw0yMjA4MjYwODI4MThaFw0yNDEx// MjgwODI4MThaMFYxCzAJBgNVBAYTAklEMQ8wDQYDVQQKEwZOZGlpbmcxDjAMBgNV// BAgTBUphdGltMRAwDgYDVQQLEwdQYWNpdGFuMRQwEgYDVQQDEwtDZXJ0TWFuYWdl// cjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMstpNSBznxOzP0BsJrr// Uhy8Y+uj79P/mcT5nsAtp7PIX9bYHokgS03H7+XjHaRzWjoP0bhRM9y+LLSOTbv4// tgWp6rZl+0Tovm+qSnjsyDYRPSzXRcKRwn6zPSsI5zo/MyNt/hVBj6m13HhbXDN3// YVckDS4h1DnBunvm4vjUWGCtwGgURUdbdLv0LfBvFfpcBQBfW8+b7Q8SK+dpJjPv// s1m9M146TPMiXMybJBczUB0i7NvzrnJ0SJjDaDikuo1jdRydVgzmhNIp9l0zWuRD// TtUvQbLQGQhJKBxtG2mL7Xthz33xfFAMC6tQxKrUZ20vY1MfKo//ru2elEBe5UYe// es0CAwEAAaMQMA4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEABa8M// tGVHyDNhgpUKY1ejrFEtkmrRh2M91btUZXARS1/2euiyVrvzWxZTlcWgDWLeph0M// vdlcCSarlzX3CLQ0nefQzS9MT7FJKKqMh12Mqmk+4U6rNbbZHyKaRs/mc1+VpvGU// 85i0qAWhTqp9c6UvUCKDTyYQxexAdeKzaACYThqyfBa0nk2WbWas5DYX0UX64NqD// GZIF3myZiEjMPDLDd3f/LdAlTDTXkMKMdwR1U7wYb/FAUdWb7RHEYPCDygZBYiwM// woUQ7qswD2Tf4JayHfRdwdD4WAqNCl18J1Fy7SGlV+8O6J4rvRCjxiWo5l/XLo+P// o0KeC8Xu474TcKFMYg==// -----END CERTIFICATE-----// Create Self-signed Certificateconst cert = Cert.createSelfSignedCertificate("www.google.com", ca)// -----BEGIN RSA PRIVATE KEY-----// MIIEowIBAAKCAQEAyy2k1IHOfE7M/QGwmutSHLxj66Pv0/+ZxPmewC2ns8hf1tge// iSBLTcfv5eMdpHNaOg/RuFEz3L4stI5Nu/i2BanqtmX7ROi+b6pKeOzINhE9LNdF// wpHCfrM9KwjnOj8zI23+FUGPqbXceFtcM3dhVyQNLiHUOcG6e+bi+NRYYK3AaBRF// R1t0u/Qt8G8V+lwFAF9bz5vtDxIr52kmM++zWb0zXjpM8yJczJskFzNQHSLs2/Ou// cnRImMNoOKS6jWN1HJ1WDOaE0in2XTNa5ENO1S9BstAZCEkoHG0baYvte2HPffF8// UAwLq1DEqtRnbS9jUx8qj/+u7Z6UQF7lRh56zQIDAQABAoIBAFzs9VRUQjJMgCi/// WxyfwCBwcWrWwdu+LYAPgvH2b5ska+EBW4XwBUD/ztLfuzD5qSyhC5Q3X3b4a83w// v9DXAbk5a6Ycon1zzZWY1xLTiQZhgA9ALiG9NK1qIPHL0qWrPiJYLjtejuxZxwot// DtBjK1wFmxmcU0pPNpFwmiKgTAN648S9EQku8M8tMo9L6irbI8SivodfQbk4U5my// bYAiZopYVU2FRuh1/qACGRDolyvGYazyNRK5RUJeynuUHA/Q5KlZ2+U6+ydrdb5f// y2DzLgQauSAZxa+sfoxsvbcaKXBWcB9e2IQxgMb0stj+TyKjPHK7yxkt7kt14DmV// wHV03oECgYEA5Gw9kZzoNGPWvoUqsldADONePw8/vLQ9aqt9Y8+eFp1CZ6GxxuFf// /MZgOovBZSv3tKyMY0IhhMHmf0GlJ9OU5iX6fm4BOwQIgPKf3O01Feb9WbOpDV8g// NQ6yggiKvYlYNE5trwtuTdZIGau/nKLetnRaWmw9I5bbdHWtF63gFJECgYEA47Uu// vdx/xaoA5PPP92tg2nqW32ktmS4CRRpSSgfxa7TAWscnLDkbdngoSMhKyI3PSqxN// 4FYSBsAghz0UG6+IYjmXTTehdFoKLwrFJmYqbscA9RL1mLUMEBEz15up2Fjv9oWY// 4Z7KAid02LnkMbtzemCr28OMXcmvVFbHpmHlcH0CgYBrElHJ78Loy+Pdao6ZCkz7// vZhv9rXpvpMLbVdZcfiooQ5/hUvP7dUQp+xzhQ8iXXm/NyKXZGhR0pI5FIxWHtet// CiBhIy9wenOB/jjxVj+MBLq9UXnsyqpONJV4XoiqT7cIzbqcUr9hvRAO+HLY+X9s// Bx5TRGlkRVKZRI/eiaKAAQKBgQChc+IEdMeT24puzAD1KYmu36UCG41dQyYQ4Szf// mOowuCR7OSIpVQSH54KIuJttwD7ub2V4Xw7BApEN0tzjFH7bRoJlGcC8wurdmAFZ// zK7hhPDE1ACXmidHbSsZASJYaBcc8HUJ5JDPHjLXSFbofETQzKKOXAS2qz5Jyo4d// BuSr8QKBgDe54vez6nZ2d2TJcZpRpMpKw+wcJIRXoXPT5gGK46aG4YhfaUYESfoY// q53HaXkVu3wdw/2o71DeIfA6s9/KtWKliqbQQOufr7+9EXSHdgdTQChyXtmChXwE// kLfK9GsHRw55bHel7tOE+mqIQtWsVcelAQtOy6aMb5Mh8dhf99JK// -----END RSA PRIVATE KEY-----// -----BEGIN CERTIFICATE-----// MIIDOTCCAiGgAwIBAgIDCAhoMA0GCSqGSIb3DQEBCwUAMFYxCzAJBgNVBAYTAklE// MQ8wDQYDVQQKEwZOZGlpbmcxDjAMBgNVBAgTBUphdGltMRAwDgYDVQQLEwdQYWNp// dGFuMRQwEgYDVQQDEwtDZXJ0TWFuYWdlcjAeFw0yMjA4MjYwODI4MThaFw0yNDEx// MjgwODI4MThaMFYxCzAJBgNVBAYTAklEMQ8wDQYDVQQKEwZOZGlpbmcxDjAMBgNV// BAgTBUphdGltMRAwDgYDVQQLEwdQYWNpdGFuMRQwEgYDVQQDEwtDZXJ0TWFuYWdl// cjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMstpNSBznxOzP0BsJrr// Uhy8Y+uj79P/mcT5nsAtp7PIX9bYHokgS03H7+XjHaRzWjoP0bhRM9y+LLSOTbv4// tgWp6rZl+0Tovm+qSnjsyDYRPSzXRcKRwn6zPSsI5zo/MyNt/hVBj6m13HhbXDN3// YVckDS4h1DnBunvm4vjUWGCtwGgURUdbdLv0LfBvFfpcBQBfW8+b7Q8SK+dpJjPv// s1m9M146TPMiXMybJBczUB0i7NvzrnJ0SJjDaDikuo1jdRydVgzmhNIp9l0zWuRD// TtUvQbLQGQhJKBxtG2mL7Xthz33xfFAMC6tQxKrUZ20vY1MfKo//ru2elEBe5UYe// es0CAwEAAaMQMA4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEABa8M// tGVHyDNhgpUKY1ejrFEtkmrRh2M91btUZXARS1/2euiyVrvzWxZTlcWgDWLeph0M// vdlcCSarlzX3CLQ0nefQzS9MT7FJKKqMh12Mqmk+4U6rNbbZHyKaRs/mc1+VpvGU// 85i0qAWhTqp9c6UvUCKDTyYQxexAdeKzaACYThqyfBa0nk2WbWas5DYX0UX64NqD// GZIF3myZiEjMPDLDd3f/LdAlTDTXkMKMdwR1U7wYb/FAUdWb7RHEYPCDygZBYiwM// woUQ7qswD2Tf4JayHfRdwdD4WAqNCl18J1Fy7SGlV+8O6J4rvRCjxiWo5l/XLo+P// o0KeC8Xu474TcKFMYg==// -----END CERTIFICATE-----
+```
+
+<!-- examples -->
+
+<!-- see -->
+<!-- see -->
