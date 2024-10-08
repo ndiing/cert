@@ -1,16 +1,16 @@
 {
-  "name": "@ndiinginc/cert",
-  "version": "2.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "description": "",
-  "author": "Ridho Prasetya",
-"repository": {
-    "type": "git",
-    "url": "git+https://github.com/ndiing/router.git"
-  }
+    "name": "@ndiinginc/cert",
+    "version": "2.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "description": "",
+    "author": "Ridho Prasetya",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ndiing/router.git"
+    }
 }

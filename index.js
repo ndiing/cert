@@ -1,2 +1,2 @@
-const cert = require('./lib/cert')
-module.exports=cert
+const cert = require("./lib/cert");
+module.exports = cert;
