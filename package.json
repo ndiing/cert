@@ -7,10 +7,17 @@
     },
     "keywords": [],
     "license": "ISC",
-    "description": "",
+    "description": "<dl> <dt><a href=\"#generateRootCA\">generateRootCA([commonName])</a> ⇒ <code>Object</code></dt> <dd><p>Menghasilkan sertifikat Certificate Authority (CA) root.</p> </dd> <dt><a href=\"#generateCertsForHostname\">generateCertsForHostname(domain, rootCAConfig)</a> ⇒ <code>Object</code></dt> <dd><p>Menghasilkan sertifikat untuk hostname yang ditentukan menggunakan konfigurasi CA root.</p> </dd> </dl>",
     "author": "Ridho Prasetya",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ndiing/router.git"
-    }
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "bugs": {
+        "url": "https://github.com/ndiing/router/issues"
+    },
+    "homepage": "https://github.com/ndiing/router#readme"
 }
