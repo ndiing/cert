@@ -1,2 +1,2 @@
-const cert = require("./lib/cert");
-module.exports = cert;
+const { getExtensionSAN, getKeysAndCert, generateRootCA, generateCertsForHostname, setDefaultAttrs } = require("./lib/cert");
+module.exports = { getExtensionSAN, getKeysAndCert, generateRootCA, generateCertsForHostname, setDefaultAttrs };
