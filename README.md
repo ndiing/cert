@@ -1,55 +1,99 @@
-## Functions
+<a name="module_cert"></a>
 
-<dl>
-<dt><a href="#generateRootCA">generateRootCA([commonName])</a> ⇒ <code>Object</code></dt>
-<dd><p>Menghasilkan sertifikat Certificate Authority (CA) root.</p>
-</dd>
-<dt><a href="#generateCertsForHostname">generateCertsForHostname(domain, rootCAConfig)</a> ⇒ <code>Object</code></dt>
-<dd><p>Menghasilkan sertifikat untuk hostname yang ditentukan menggunakan konfigurasi CA root.</p>
-</dd>
-</dl>
+## cert
 
-<a name="generateRootCA"></a>
+* [cert](#module_cert)
+    * [.defaultAttrs](#module_cert.defaultAttrs) : <code>Array.&lt;Object&gt;</code>
+    * [.getExtensionSAN(domain)](#module_cert.getExtensionSAN) ⇒ <code>Object</code>
+    * [.getKeysAndCert([serialNumber])](#module_cert.getKeysAndCert) ⇒ <code>Object</code>
+    * [.generateRootCA([commonName])](#module_cert.generateRootCA) ⇒ <code>Object</code>
+    * [.generateCertsForHostname(domain, rootCAConfig)](#module_cert.generateCertsForHostname) ⇒ <code>Object</code>
+    * [.setDefaultAttrs(attrs)](#module_cert.setDefaultAttrs)
+    * [.getCertsForHostname(domain)](#module_cert.getCertsForHostname) ⇒ <code>Object</code>
 
-## generateRootCA([commonName]) ⇒ <code>Object</code>
+<a name="module_cert.defaultAttrs"></a>
 
-Menghasilkan sertifikat Certificate Authority (CA) root.
+### cert.defaultAttrs : <code>Array.&lt;Object&gt;</code>
+Atribut default yang digunakan untuk sertifikat.
 
-**Kind**: global function  
-**Returns**: <code>Object</code> - Objek yang berisi kunci privat, kunci publik, dan sertifikat dalam format PEM.
-
-| Param        | Type                | Default                                            | Description                    |
-| ------------ | ------------------- | -------------------------------------------------- | ------------------------------ |
-| [commonName] | <code>string</code> | <code>&quot;\&quot;CertManager\&quot;&quot;</code> | Nama umum untuk sertifikat CA. |
-
+**Kind**: static property of [<code>cert</code>](#module_cert)  
 **Properties**
 
-| Name        | Type                | Description                       |
-| ----------- | ------------------- | --------------------------------- |
-| privateKey  | <code>string</code> | Kunci privat CA dalam format PEM. |
-| publicKey   | <code>string</code> | Kunci publik CA dalam format PEM. |
-| certificate | <code>string</code> | Sertifikat CA dalam format PEM.   |
+| Name | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | Nama atribut. |
+| value | <code>string</code> | Nilai atribut. |
+| [shortName] | <code>string</code> | Nama pendek atribut (opsional). |
 
-<a name="generateCertsForHostname"></a>
+<a name="module_cert.getExtensionSAN"></a>
 
-## generateCertsForHostname(domain, rootCAConfig) ⇒ <code>Object</code>
+### cert.getExtensionSAN(domain) ⇒ <code>Object</code>
+Mengambil ekstensi Subject Alternative Name (SAN) berdasarkan domain.
 
-Menghasilkan sertifikat untuk hostname yang ditentukan menggunakan konfigurasi CA root.
+**Kind**: static method of [<code>cert</code>](#module_cert)  
+**Returns**: <code>Object</code> - - Objek yang berisi nama dan alternatif nama.  
 
-**Kind**: global function  
-**Returns**: <code>Object</code> - Objek yang berisi kunci privat, kunci publik, dan sertifikat dalam format PEM.
+| Param | Type | Description |
+| --- | --- | --- |
+| domain | <code>string</code> | Domain yang akan digunakan. |
 
-| Param             | Type                | Description                                   |
-| ----------------- | ------------------- | --------------------------------------------- |
-| domain            | <code>string</code> | Nama domain untuk sertifikat yang dihasilkan. |
-| rootCAConfig      | <code>Object</code> | Objek konfigurasi untuk CA root.              |
-| rootCAConfig.cert | <code>string</code> | Sertifikat CA dalam format PEM.               |
-| rootCAConfig.key  | <code>string</code> | Kunci privat CA dalam format PEM.             |
+<a name="module_cert.getKeysAndCert"></a>
 
-**Properties**
+### cert.getKeysAndCert([serialNumber]) ⇒ <code>Object</code>
+Menghasilkan pasangan kunci dan sertifikat.
 
-| Name        | Type                | Description                                      |
-| ----------- | ------------------- | ------------------------------------------------ |
-| privateKey  | <code>string</code> | Kunci privat sertifikat domain dalam format PEM. |
-| publicKey   | <code>string</code> | Kunci publik sertifikat domain dalam format PEM. |
-| certificate | <code>string</code> | Sertifikat domain dalam format PEM.              |
+**Kind**: static method of [<code>cert</code>](#module_cert)  
+**Returns**: <code>Object</code> - - Objek yang berisi kunci dan sertifikat.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| [serialNumber] | <code>string</code> | Nomor seri untuk sertifikat. |
+
+<a name="module_cert.generateRootCA"></a>
+
+### cert.generateRootCA([commonName]) ⇒ <code>Object</code>
+Menghasilkan Root Certificate Authority (CA).
+
+**Kind**: static method of [<code>cert</code>](#module_cert)  
+**Returns**: <code>Object</code> - - Objek yang berisi kunci privat, kunci publik, dan sertifikat.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| [commonName] | <code>string</code> | Nama umum untuk sertifikat. |
+
+<a name="module_cert.generateCertsForHostname"></a>
+
+### cert.generateCertsForHostname(domain, rootCAConfig) ⇒ <code>Object</code>
+Menghasilkan sertifikat untuk hostname tertentu.
+
+**Kind**: static method of [<code>cert</code>](#module_cert)  
+**Returns**: <code>Object</code> - - Objek yang berisi kunci privat, kunci publik, dan sertifikat.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| domain | <code>string</code> | Nama domain untuk sertifikat. |
+| rootCAConfig | <code>Object</code> | Konfigurasi Root CA. |
+
+<a name="module_cert.setDefaultAttrs"></a>
+
+### cert.setDefaultAttrs(attrs)
+Mengatur atribut default.
+
+**Kind**: static method of [<code>cert</code>](#module_cert)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| attrs | <code>Array.&lt;Object&gt;</code> | Array atribut yang ingin disetel sebagai default. |
+
+<a name="module_cert.getCertsForHostname"></a>
+
+### cert.getCertsForHostname(domain) ⇒ <code>Object</code>
+Mengambil sertifikat untuk hostname tertentu.
+
+**Kind**: static method of [<code>cert</code>](#module_cert)  
+**Returns**: <code>Object</code> - - Objek yang berisi kunci privat dan sertifikat.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| domain | <code>string</code> | Nama domain untuk sertifikat. |
+
