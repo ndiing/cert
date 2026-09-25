@@ -1,6 +1,6 @@
 {
   "name": "@ndiinginc/cert",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "",
   "main": "./src/cert.js",
   "scripts": {
