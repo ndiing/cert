@@ -1,8 +1,8 @@
 {
-  "name": "init",
-  "version": "1.0.0",
+  "name": "@ndiinginc/cert",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./src/cert.js",
   "scripts": {
     "test": "jest",
     "test:live": "jest --watchAll",
@@ -20,5 +20,8 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "jest": "^30.5.2"
+  },
+  "dependencies": {
+    "node-forge": "^1.4.0"
   }
 }
