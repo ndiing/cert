@@ -1,0 +1,24 @@
+{
+  "name": "init",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:live": "jest --watchAll",
+    "dev": "nodemon src/index.js",
+    "dev:internal": "nodemon dev/index.js",
+    "prettier": "npx prettier . --write",
+    "commit": "node scripts/commit.js",
+    "npm:login": "npm login",
+    "npm:publish": "npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.5.2"
+  }
+}
