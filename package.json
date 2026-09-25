@@ -4,20 +4,21 @@
   "description": "",
   "main": "./src/cert.js",
   "scripts": {
-    "test": "jest",
-    "test:live": "jest --watchAll",
+    "test": "nodemon --exec \"node -e \\\"require('@ndiinginc/test')(require('path').join(process.cwd(),'tests'),{verbose:true})\\\"\"",
     "dev": "nodemon src/index.js",
-    "dev:internal": "nodemon dev/index.js",
     "prettier": "npx prettier . --write",
     "commit": "node scripts/commit.js",
+    "npm:dry-run": "npm publish --dry-run",
     "npm:login": "npm login",
-    "npm:publish": "npm publish --access public"
+    "npm:publish": "npm publish --access public",
+    "tsc": "npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@ndiinginc/test": "^1.0.0",
     "@types/jest": "^30.0.0",
     "jest": "^30.5.2"
   },
